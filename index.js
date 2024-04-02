@@ -1,0 +1,56 @@
+let data=[
+    {
+        name:'個人攝影工作室形象網站',
+        link:'https://luluuhuang.github.io/project-YTD/',
+        img:'./img/05-昨日攝影.jpeg'
+    },
+    {
+        name:'飯店官網',
+        link:'http://www.younglake.com.tw/',
+        img:'./img/水漾.jpg'
+    },
+]
+const app = Vue.createApp({
+    data() {
+        return {
+            projects:[
+                {
+                    name:'個人攝影工作室形象網站',
+                    link:'https://luluuhuang.github.io/project-YTD/',
+                    img:'./img/05-昨日攝影.jpeg'
+                },
+                {
+                    name:'飯店官網',
+                    link:'http://www.younglake.com.tw/',
+                    img:'./img/水漾.jpg'
+                },
+                {
+                    name:'電子零件公司官網',
+                    link:'https://trumps.com.tw/',
+                    img:'./img/創宇.jpg'
+                },
+                {
+                    name:'中興新村現場導覽網站',
+                    link:'http://zrsi.beedemo.world/',
+                    img:'./img/中興.jpg'
+                },
+                {
+                    name:'生技公司一頁式訂購網站(串金流)',
+                    link:'http://www.fhmedical.com.tw/',
+                    img:'./img/芳和.jpg'
+                },
+                {
+                    name:'旅遊網站',
+                    link:'https://luluuhuang.github.io/----API/',
+                    img:'./img/旅遊.jpg'
+                },
+                {
+                    name:'微軟官網仿切',
+                    link:'https://luluuhuang.github.io/microsoft/',
+                    img:'./img/06-微軟仿切.png'
+                },
+            ]
+        }
+    },
+});
+app.mount('#app');

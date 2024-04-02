@@ -1,0 +1,16 @@
+.row{
+    display: flex;
+    justify-content: center;
+    .work{
+        padding: 20px;
+        .work_content{
+            border: 1px solid;
+            p{
+                text-align: center;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

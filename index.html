@@ -1,103 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lulu Huang</title>
-    <style>
-    h1{
-        text-align: center;
-    }
-    .container{
-        width: 100vw;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .work{
-        width: 30vw;
-        padding: 15px;
-        border: 1px solid lightgrey;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        margin-right: 10px;
-    }
-    img{
-        width: 30vw;
-    }
-    p{
-        text-align: center;
-        font-size: 1.5vw;
-    }
-    </style>
-</head>
-<body>
-    <h1>作品集/前端</h1>
-        <div class="container">
-            <div class="work">
-                <p>個人攝影工作室形象網站</p>
-                <a href="https://luluuhuang.github.io/project-YTD/">
-                    <img src="./img/05-昨日攝影.jpeg" alt="">
-                </a>
-            </div>
-            <div class="work">
-                <p>BMI計算機</p>
-                <a href="https://luluuhuang.github.io/bmi/">
-                    <img src="./img/01-BMI.jpeg" alt="">
-                </a>
-            </div>
-            <div class="work">
-                <p>色弱遊戲</p>
-                <a href="https://luluuhuang.github.io/colorgame/">
-                    <img src="./img/02-色弱遊戲1.jpeg" alt="">
-                </a>
-            </div>
-            <div class="work">
-                <p>API串接應用－天氣卡片</p>
-                <a href="https://luluuhuang.github.io/weathercard/">
-                    <img src="./img/03-天氣卡片.jpeg" alt="">
-                </a>
-            </div>
-            <div class="work">
-                <p>API串接應用－空氣品質監測網</p>
-                <a href="https://luluuhuang.github.io/air-quality/">
-                    <img src="./img/air.png" alt="">
-                </a>
-            </div>
-            <div class="work">
-                <p>成績分級系統</p>
-                <a href="https://luluuhuang.github.io/grades/">
-                    <img src="./img/04-成績分級系統.jpeg" alt="">
-                </a>
-            </div>
-            <div class="work">
-                <p>微軟官網仿切</p>
-                <a href="https://luluuhuang.github.io/microsoft/">
-                    <img src="./img/06-微軟仿切.png" alt="">
-                </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lulu Huang</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/index.css" />
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    </head>
+    <body>
+        <h1>作品集/前端</h1>
+        <div class="container-fluid" id="app">
+            <div class="row">
+                <div class="col-4 work" v-for="project in projects" :key="project.name">
+                    <div class="work_content">
+                        <p>{{project.name}}</p>
+                        <a :href="project.link">
+                            <img :src="project.img" alt="" />
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    <h1>作品集/行銷</h1>
-        <div class="container">
-            <div class="work">
-                <p>行銷策略</p>
-                <a href="https://www.hh-taiwan.com.tw/page/1990s">
-                    <img src="./img/hh1.png" alt="">
-                </a>
-            </div>
-            <div class="work">
-                <p>節目置入</p>
-                <a href="https://www.facebook.com/SandyandJackyShow/videos/518082100003064">
-                    <img src="./img/hh2.png" alt="">
-                </a>
-            </div>
-            <div class="work">
-                <p>KOL合作</p>
-                <a href="https://www.facebook.com/helloiamhook/posts/pfbid02z56RdZBRXPmBp7vKtid2L53aACeuYDbE6YSFftrx7fov8prKW6LVd8YskkDJQZoVl">
-                    <img src="./img/hh3.png" alt="">
-                </a>
-            </div>
-        </div>
-</body>
+        <script src="./index.js" type="module"></script>
+    </body>
 </html>
