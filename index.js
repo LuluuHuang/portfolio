@@ -13,6 +13,12 @@ let data=[
 const app = Vue.createApp({
     data() {
         return {
+            title:'作品集',
+            infos:
+            {
+                name:'Lulu Huang',
+                pic:'./img/lu.jpg'
+            },
             projects:[
                 {
                     name:'個人攝影工作室形象網站',

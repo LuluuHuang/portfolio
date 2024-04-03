@@ -1,12 +1,26 @@
+h1{
+    text-align: center;
+}
 .row{
     display: flex;
-    justify-content: center;
     .work{
         padding: 20px;
         .work_content{
-            border: 1px solid;
+            border: 2px solid #c3cfe2;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
             p{
                 text-align: center;
+                font-size: 1.5em;
+                font-weight: 700;
+                margin: 0;
+            }
+            .pic{
+                border-radius: 0 0 10px 10px;
+                height: 35vh;
+                background-size: cover;
+                background-position: top;
+                background-repeat: no-repeat;
             }
             img{
                 width: 100%;
