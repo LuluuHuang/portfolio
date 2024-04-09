@@ -17,7 +17,15 @@ const app = Vue.createApp({
             infos:
             {
                 name:'Lulu Huang',
-                pic:'./img/lu.jpg'
+                pic:'./img/lu.jpg',
+                skills:[
+                    'JavaScript',
+                    'HTML',
+                    'CSS',
+                    'SCSS',
+                    'Vue',
+                    'Bootstrap',
+                ]
             },
             projects:[
                 {
@@ -55,6 +63,11 @@ const app = Vue.createApp({
                     link:'https://luluuhuang.github.io/microsoft/',
                     img:'./img/06-微軟仿切.png'
                 },
+                {
+                    name:'簡易零售POS系統',
+                    link:'#',
+                    img:''
+                }
             ]
         }
     },

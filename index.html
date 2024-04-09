@@ -15,11 +15,17 @@
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     </head>
     <body id="app">
-        <div class="container-fluid">
+        <div class="container sec1">
             <div class="row">
-                <div class="col-4">
+                <div class="col-lg-3 col-md-4 col-sm-5 col-12 p-md-3 p-sm-2 p-5">
                     <img :src="infos.pic" alt="">
-                    <p>{{infos.name}}</p>
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-7 col-12">
+                    <h1>{{infos.name}}</h1>
+                    <p>技能</p>
+                    <ul v-for="skill in infos.skills">
+                        <li>{{skill}}</li>
+                    </ul>
                 </div>
             </div>
         </div>
