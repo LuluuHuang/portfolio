@@ -1,7 +1,3 @@
-body {
-  background-image: url("/img/bg2.jpg");
-}
-
 .sec1 img {
   width: 100%;
   -webkit-clip-path: circle(50% at 50% 50%);

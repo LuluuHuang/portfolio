@@ -13,23 +13,33 @@
         />
     </head>
     <body id="app">
-        <div class="container sec1">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-5 col-12 p-md-3 p-sm-2 p-5">
+        <div class="container-fluid" :style="{ 'background-image': 'url(' + bgImg + ')' }">
+            
+            <div class="row sec1 d-flex justify-content-center align-items-center">
+                <div class="col">
                     <img :src="infos.pic" alt="">
                 </div>
-                <div class="col-lg-9 col-md-8 col-sm-7 col-12">
+                <div class="col">
                     <h1>{{infos.name}}</h1>
-                    <p>技能</p>
+                    <h2>技能</h2>
                     <ul v-for="skill in infos.skills">
                         <li>{{skill}}</li>
                     </ul>
                 </div>
+                <div class="col">
+                    <h2>工作經歷</h2>
+                    <ul v-for="exp in infos.experience">
+                        <li>{{exp}}</li>
+                    </ul>
+                    <h2>學歷</h2>
+                    <ul>
+                        <li>{{infos.educate}}</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="container-fluid">
-            <h1>{{title}}</h1>
-            <div class="row">
+
+            <div class="row sec2">
+                <h1>{{title}}</h1>
                 <div class="col-lg-4 col-md-6 col-sm-12 work" v-for="project in projects" :key="project.name">
                     <div class="work_content">
                         <p>{{project.name}}</p>
@@ -39,6 +49,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script src="./index.js" type="module"></script>

@@ -1,22 +1,11 @@
-let data=[
-    {
-        name:'個人攝影工作室形象網站',
-        link:'https://luluuhuang.github.io/project-YTD/',
-        img:'./img/05-昨日攝影.jpeg'
-    },
-    {
-        name:'飯店官網',
-        link:'http://www.younglake.com.tw/',
-        img:'./img/水漾.jpg'
-    },
-]
 const app = Vue.createApp({
     data() {
         return {
             title:'作品集',
+            bgImg:'./img/bg2.jpg',
             infos:
             {
-                name:'Lulu Huang',
+                name:'黃堉茹 / Lulu Huang',
                 pic:'./img/lu.jpg',
                 skills:[
                     'JavaScript',
@@ -25,7 +14,12 @@ const app = Vue.createApp({
                     'SCSS',
                     'Vue',
                     'Bootstrap',
-                ]
+                ],
+                experience:[
+                    '長林創新股份有限公司 前端工程師',
+                    '汨宇國際有限公司 行銷專員'
+                ],
+                educate:'世新大學 公共關係暨廣告學系 畢業'
             },
             projects:[
                 {
