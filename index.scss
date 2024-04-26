@@ -1,33 +1,73 @@
+
 .sec1{
     img{
         width: 100%;
         clip-path: circle(50% at 50% 50%);
     }
+    p{
+        text-align: center;
+        margin: 0;
+    }
+    .engName{
+        font-family:Serif ;
+    }
+    .skills{
+        font-family:Times New Roman;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        li{
+            font-size: 20px;
+        }
+    }
+    .btnStyle{
+        margin: 5% 20%;
+        border-radius: 30px;
+        background-color: #c99a93;
+        color: white;
+        cursor:pointer;
+    }
 }
-h1{
-    text-align: center;
-}
-.row{
+
+.sec2{
     display: flex;
+    overflow: hidden;
     .work{
         padding: 20px;
+        height: 400px;
         .work_content{
+            background-color: white;
             border: 2px solid #c3cfe2;
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            height: 100%;
             p{
                 text-align: center;
                 font-size: 1.5em;
                 font-weight: 700;
                 margin: 0;
+                height: 10%;
             }
             .pic{
                 border-radius: 0 0 10px 10px;
-                height: 35vh;
+                height: 70%;
                 background-size: cover;
                 background-position: top;
                 background-repeat: no-repeat;
             }
+            .pillcontainer{
+                height: 20%;
+                span{
+                    background-color: antiquewhite;
+                }
+            }
+
         }
+    }
+    .work:hover{
+        transform: translate(2px,2px);
     }
 }

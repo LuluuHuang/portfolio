@@ -5,19 +5,21 @@ const app = Vue.createApp({
             bgImg:'./img/bg2.jpg',
             infos:
             {
-                name:'黃堉茹 / Lulu Huang',
+                name:'黃堉茹',
+                engName:'Lulu Huang',
                 pic:'./img/lu.jpg',
                 skills:[
                     'JavaScript',
                     'HTML',
                     'CSS',
                     'SCSS',
-                    'Vue',
+                    'Vue.js',
                     'Bootstrap',
                 ],
                 experience:[
                     '長林創新股份有限公司 前端工程師',
-                    '汨宇國際有限公司 行銷專員'
+                    '汨宇國際有限公司 行銷專員',
+                    '霧峰區戶政事務所 行政助理'
                 ],
                 educate:'世新大學 公共關係暨廣告學系 畢業'
             },
@@ -25,42 +27,99 @@ const app = Vue.createApp({
                 {
                     name:'個人攝影工作室形象網站',
                     link:'https://luluuhuang.github.io/project-YTD/',
-                    img:'./img/05-昨日攝影.jpeg'
+                    img:'./img/05-昨日攝影.jpeg',
+                    skill:[
+                        'HTML',
+                        'JavaScript',
+                        'CSS',
+                        'SCSS'
+                    ]
                 },
                 {
                     name:'飯店官網',
                     link:'http://www.younglake.com.tw/',
-                    img:'./img/水漾.jpg'
+                    img:'./img/水漾.jpg',
+                    skill:[
+                        'HTML',
+                        'CSS',
+                        'Bootstrap3',
+                        'JavaScript',
+                        'jQuery',
+                        'C#',
+                        'ASP.NET MVC'
+                    ]
                 },
                 {
                     name:'電子零件公司官網',
                     link:'https://trumps.com.tw/',
-                    img:'./img/創宇.jpg'
+                    img:'./img/創宇.jpg',
+                    skill:[
+                        'HTML',
+                        'CSS',
+                        'Bootstrap3',
+                        'JavaScript',
+                        'jQuery',
+                        'C#',
+                        'ASP.NET MVC'
+                    ]
                 },
                 {
                     name:'中興新村現場導覽網站',
                     link:'http://zrsi.beedemo.world/',
-                    img:'./img/中興.jpg'
+                    img:'./img/中興.jpg',
+                    skill:[
+                        'HTML',
+                        'CSS',
+                        'Bootstrap3',
+                        'JavaScript',
+                        'jQuery',
+                        'C#',
+                        'ASP.NET MVC'
+                    ]
                 },
                 {
-                    name:'生技公司一頁式訂購網站(串金流)',
+                    name:'生技公司一頁式訂購網站',
                     link:'http://www.fhmedical.com.tw/',
-                    img:'./img/芳和.jpg'
+                    img:'./img/芳和.jpg',
+                    skill:[
+                        'HTML',
+                        'CSS',
+                        'SCSS',
+                        'JavaScript',
+                        '串金流'
+                    ]
                 },
                 {
                     name:'旅遊網站',
                     link:'https://luluuhuang.github.io/----API/',
-                    img:'./img/旅遊.jpg'
+                    img:'./img/旅遊.jpg',
+                    skill:[
+                        'HTML',
+                        'CSS',
+                        'SCSS',
+                        'JavaScript'
+                    ]
                 },
                 {
                     name:'微軟官網仿切',
                     link:'https://luluuhuang.github.io/microsoft/',
-                    img:'./img/06-微軟仿切.png'
+                    img:'./img/06-微軟仿切.png',
+                    skill:[
+                        'HTML',
+                        'CSS',
+                        'SCSS'
+                    ]
                 },
                 {
                     name:'簡易零售POS系統',
                     link:'#',
-                    img:''
+                    img:'',
+                    skill:[
+                        'HTML',
+                        'CSS',
+                        'SCSS',
+                        'Vue.js'
+                    ]
                 }
             ]
         }

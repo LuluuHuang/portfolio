@@ -3,32 +3,68 @@
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
 }
-
-h1 {
+.sec1 p {
+  text-align: center;
+  margin: 0;
+}
+.sec1 .engName {
+  font-family: Serif;
+}
+.sec1 .skills {
+  font-family: Times New Roman;
+}
+.sec1 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   text-align: center;
 }
+.sec1 ul li {
+  font-size: 20px;
+}
+.sec1 .btnStyle {
+  margin: 5% 20%;
+  border-radius: 30px;
+  background-color: #c99a93;
+  color: white;
+  cursor: pointer;
+}
 
-.row {
+.sec2 {
   display: flex;
+  overflow: hidden;
 }
-.row .work {
+.sec2 .work {
   padding: 20px;
+  height: 400px;
 }
-.row .work .work_content {
+.sec2 .work .work_content {
+  background-color: white;
   border: 2px solid #c3cfe2;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  height: 100%;
 }
-.row .work .work_content p {
+.sec2 .work .work_content p {
   text-align: center;
   font-size: 1.5em;
   font-weight: 700;
   margin: 0;
+  height: 10%;
 }
-.row .work .work_content .pic {
+.sec2 .work .work_content .pic {
   border-radius: 0 0 10px 10px;
-  height: 35vh;
+  height: 70%;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+}
+.sec2 .work .work_content .pillcontainer {
+  height: 20%;
+}
+.sec2 .work .work_content .pillcontainer span {
+  background-color: antiquewhite;
+}
+.sec2 .work:hover {
+  transform: translate(2px, 2px);
 }
