@@ -91,7 +91,7 @@ const app = Vue.createApp({
                 },
                 {
                     name:'旅遊網站',
-                    link:'https://luluuhuang.github.io/----API/',
+                    link:'https://luluuhuang.github.io/tourWeb/',
                     img:'./img/旅遊.jpg',
                     skill:[
                         'HTML',
