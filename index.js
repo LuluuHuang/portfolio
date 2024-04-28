@@ -1,7 +1,7 @@
 const app = Vue.createApp({
     data() {
         return {
-            title:'作品集',
+            title:'Portfolio',
             bgImg:'./img/bg2.jpg',
             infos:
             {

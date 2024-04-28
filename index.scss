@@ -1,5 +1,10 @@
 
+.bg{
+    background-size: cover;
+    background-position: center;
+}
 .sec1{
+    height: 100vh;
     img{
         width: 100%;
         clip-path: circle(50% at 50% 50%);
@@ -8,12 +13,12 @@
         text-align: center;
         margin: 0;
     }
-    .engName{
+    .engName,.skills{
         font-family:Serif ;
     }
-    .skills{
-        font-family:Times New Roman;
-    }
+    // .skills{
+    //     font-family:Times New Roman;
+    // }
     ul{
         margin: 0;
         padding: 0;
@@ -31,25 +36,38 @@
         cursor:pointer;
     }
 }
-
 .sec2{
     display: flex;
     overflow: hidden;
+    h1{
+        font-family:Times New Roman;
+    }
     .work{
         padding: 20px;
         height: 400px;
         .work_content{
-            background-color: white;
-            border: 2px solid #c3cfe2;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(163, 161, 161, 0.5);
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
             height: 100%;
+            overflow: hidden;
+            position: relative;
             p{
                 text-align: center;
                 font-size: 1.5em;
                 font-weight: 700;
-                margin: 0;
+                margin: 10px 0 5px 0;
                 height: 10%;
+            }
+            .underline {
+                position: absolute;
+                left: 50%;
+                width: 0;
+                height: 2px;
+                background-color: rgba(163, 161, 161, 0.5);
+                transform: translateX(-50%);
+                transition: width 0.5s ease;
             }
             .pic{
                 border-radius: 0 0 10px 10px;
@@ -59,7 +77,9 @@
                 background-repeat: no-repeat;
             }
             .pillcontainer{
+                margin-top: 15px;
                 height: 20%;
+                font-family:Times New Roman;
                 span{
                     background-color: antiquewhite;
                 }
@@ -68,6 +88,27 @@
         }
     }
     .work:hover{
-        transform: translate(2px,2px);
+        .work_content{
+            .underline {
+                width: 80%;
+            }
+            .pic{
+                scale: 1.05;
+                transition-duration: 0.6s;
+            }
+        }
+        
+    }
+}
+footer{
+    background-color: #c99a93;
+}
+@media screen and (max-width: 960px) {
+    .sec1 {
+      /* 在手機版時的樣式 */
+      height: auto; /* 或是設定其他適合手機螢幕的高度 */
+    }
+    .sec2{
+        padding-top: 50px;
     }
 }
