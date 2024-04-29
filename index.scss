@@ -39,8 +39,24 @@
 .sec2{
     display: flex;
     overflow: hidden;
-    h1{
+    .sec2Title{
         font-family:Times New Roman;
+        p{
+            position: relative;
+            z-index: 0;
+            width: fit-content;
+        }
+    }
+    .sec2Title>p::before{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: -10px;
+        top: 2px;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background-color: #c99a93;
     }
     .work{
         padding: 20px;

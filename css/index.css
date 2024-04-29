@@ -40,8 +40,25 @@
   display: flex;
   overflow: hidden;
 }
-.sec2 h1 {
+.sec2 .sec2Title {
   font-family: Times New Roman;
+}
+.sec2 .sec2Title p {
+  position: relative;
+  z-index: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.sec2 .sec2Title > p::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -10px;
+  top: 2px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #c99a93;
 }
 .sec2 .work {
   padding: 20px;
